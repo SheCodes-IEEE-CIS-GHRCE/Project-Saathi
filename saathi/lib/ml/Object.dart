@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:tflite/tflite.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:camera/camera.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import './Live.dart';
 import './Box.dart';
 
@@ -25,9 +26,12 @@ Future<Null> main() async {
   );
 }
 
+final FlutterTts flutterTts = FlutterTts();
+
 class ObjectDetect extends StatefulWidget {
   final List<CameraDescription> cameras;
   ObjectDetect(this.cameras);
+
   @override
   _ObjectDetectState createState() => _ObjectDetectState();
 }
@@ -46,6 +50,9 @@ class _ObjectDetectState extends State<ObjectDetect> {
   String _fingers = "";
 
   String numbers = '';
+  Future _speak() async {
+    await flutterTts.speak("APPLE");
+  }
 
   @override
   void dispose() {
@@ -68,7 +75,7 @@ class _ObjectDetectState extends State<ObjectDetect> {
 
   loadMyModel() async {
     var res = await Tflite.loadModel(
-        labels: "assets/yolov2_tiny.txt", model: "assets/yolov2_tiny.tflite");
+        labels: "assets/labels.txt", model: "assets/model_unquant.tflite");
 
     print("Result after Loading the Model is : $res");
   }
@@ -103,6 +110,7 @@ class _ObjectDetectState extends State<ObjectDetect> {
       _confidence = _result != null
           ? (_result[0]["confidence"] * 100.0).toString().substring(0, 2) + "%"
           : "";
+      _speak();
 
       print(str.substring(2));
       print(
