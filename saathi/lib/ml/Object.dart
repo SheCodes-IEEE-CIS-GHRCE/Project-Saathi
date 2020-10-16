@@ -48,6 +48,7 @@ class _ObjectDetectState extends State<ObjectDetect> {
   List _result;
   String _confidence = "";
   String _fingers = "";
+  String _object = "";
 
   String numbers = '';
   Future _speak(String str) async {
@@ -111,6 +112,7 @@ class _ObjectDetectState extends State<ObjectDetect> {
           ? (_result[0]["confidence"] * 100.0).toString().substring(0, 2) + "%"
           : "";
       _speak(str);
+      object = str;
 
       print(str.substring(2));
       print(
@@ -160,7 +162,7 @@ class _ObjectDetectState extends State<ObjectDetect> {
                               ),
                               _result == null
                                   ? Container()
-                                  : Text("\nConfidence: $_confidence"),
+                                  : Text("$_object \nConfidence: $_confidence"),
                             ],
                           ),
                         )
