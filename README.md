@@ -29,14 +29,14 @@ In this interactive app, we have taken great care of the problem faced by Visual
 
 We have integrated the entire platform with **Voice Technology**, so that storing information won't be a problem for them.
 
+# Screenshots
+<pre>
+<img src="./Screenshots/1.jpg" width="250"> <img src="./Screenshots/2.jpg" width="250"> <img src="./Screenshots/3.jpg" width="250"> <img src="./Screenshots/4.jpg" width="250"> <img src="./Screenshots/5.jpg" width="250">
 
-![Screenshot 2020-10-16 14 08 19_](https://user-images.githubusercontent.com/56873389/96236161-4cfdcd00-0fb9-11eb-9091-997857d4abac.png)
-
+</pre>
 ## And how it works ?
 
 Besides storing some basic profile information, it would ask the user about their food preferences, any health issues and if they are allergic to a particular substance.
-
-![WhatsApp Image 2020-10-16 at 2 58 27 PM](https://user-images.githubusercontent.com/56873389/96241739-36a73f80-0fc0-11eb-8260-9d46491d0e26.jpeg)
 
 Then it would scan the nearby areas for edible items, fruits, vegetables and cereals including packaged food-items. 
 
