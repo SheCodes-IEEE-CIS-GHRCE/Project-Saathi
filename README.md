@@ -35,6 +35,9 @@ We have integrated the entire platform with **Voice Technology**, so that storin
 ## And how it works ?
 
 Besides storing some basic profile information, it would ask the user about their food preferences, any health issues and if they are allergic to a particular substance.
+
+![WhatsApp Image 2020-10-16 at 2 58 27 PM](https://user-images.githubusercontent.com/56873389/96241739-36a73f80-0fc0-11eb-8260-9d46491d0e26.jpeg)
+
 Then it would scan the nearby areas for edible items, fruits, vegetables and cereals including packaged food-items. 
 
 ![WhatsApp Image 2020-10-16 at 2 22 19 PM](https://user-images.githubusercontent.com/56873389/96239570-833d4b80-0fbd-11eb-904a-0987b3c87fa3.jpeg)
