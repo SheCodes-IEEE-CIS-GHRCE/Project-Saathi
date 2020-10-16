@@ -38,6 +38,7 @@ Besides storing some basic profile information, it would ask the user about thei
 Then it would scan the nearby areas for edible items, fruits, vegetables and cereals including packaged food-items. 
 
 ![WhatsApp Image 2020-10-16 at 2 22 19 PM](https://user-images.githubusercontent.com/56873389/96239570-833d4b80-0fbd-11eb-904a-0987b3c87fa3.jpeg)
+![1_cMR5W-JeOc8l-n1pLXRVnw](https://user-images.githubusercontent.com/56873389/96240427-86850700-0fbe-11eb-9681-c7dbc1f30575.gif)
 
 
 It would give the output by converting the result to speech through TTS(Text-To-Speech) to the user. 
@@ -51,9 +52,13 @@ In case, the item is packaged, it would scan the packet and check for :
 
 + **Some other Relevant information ( Expiry date, Preparation guide etc. )**
 
-On the basis of these three, it would check for any item that can be unsuitable for the user, and would alert the user by giving a **warning** about the same.
 
-In this way, it can assist them in finding the suitable food items whenever they need.
+![2](https://user-images.githubusercontent.com/56873389/96240912-19be3c80-0fbf-11eb-9868-d835904a7551.jpg)
+![share](https://user-images.githubusercontent.com/56873389/96240917-1aef6980-0fbf-11eb-8e41-3e926478fd38.jpg)
+
+<h4>On the basis of these three, it would check for any item that can be unsuitable for the user, and would alert the user by giving a warning about the same.</h4>
+
+In this way, it can assist them in finding the suitable food items whenever they need by giving accurate and personalised results.
 
 ## Extensions in Future
 
