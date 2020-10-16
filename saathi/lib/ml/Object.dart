@@ -50,8 +50,8 @@ class _ObjectDetectState extends State<ObjectDetect> {
   String _fingers = "";
 
   String numbers = '';
-  Future _speak() async {
-    await flutterTts.speak("APPLE");
+  Future _speak(String str) async {
+    await flutterTts.speak(str);
   }
 
   @override
@@ -110,7 +110,7 @@ class _ObjectDetectState extends State<ObjectDetect> {
       _confidence = _result != null
           ? (_result[0]["confidence"] * 100.0).toString().substring(0, 2) + "%"
           : "";
-      _speak();
+      _speak(str);
 
       print(str.substring(2));
       print(
